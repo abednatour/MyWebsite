@@ -1,0 +1,120 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A122A;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #0057e7;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.content-body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    flex-grow: 1;
+    gap: 10px;
+    padding: 5px;
+}
+.content {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: black;
+    border-radius: 10px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+    .content iframe {
+        width: 250%;
+        height: 100%;
+        border: none;
+    }
+
+.sidenav {
+    background-color: #E32636;
+    padding: 80px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+    .sidenav h2 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .sidenav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidenav li {
+        padding: 10px;
+        transition: background 0.3s ease;
+    }
+
+        .sidenav li:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+    .sidenav a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1em;
+    }
+
+.ads {
+    background-color: #ffcc00;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #00264d;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .content-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidenav {
+        order: -1;
+        text-align: center;
+    }
+
+        .sidenav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .sidenav li {
+            padding: 5px;
+        }
+}

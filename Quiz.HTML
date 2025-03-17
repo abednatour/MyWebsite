@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+
+</head>
+<body>
+    <header>
+        <h1> FC Barcelona - The Official Fan Page</h1>
+        <marquee behavior="scroll" direction="left" style="color: yellow; background-color: #00264d; padding: 10px; font-size: 1.2em;">
+            Welcome to the FC Barcelona Fan Page! Stay tuned for the latest updates and events!
+        </marquee>
+
+    </header>
+
+    <nav>
+        <a href="introduction.html" target="_blank"> Introduction</a>
+        <a href="history.html" target="_blank"> History</a>
+        <a href="players.html" target="_blank"> Players</a>
+        <a href="Career.html" target="_blank"> Career Titles</a>
+        <a href="Legends.html" target="_blank"> Legends</a>
+        <a href="campnou.html" target="_blank"> Camp Nou</a>
+        <a href="standings.html" target="_blank"> Standings</a>
+        <a href="Shop.html" target="_blank"> Shop</a>
+        <a href="Gallery.html" target="_blank"> Gallery</a>
+        <a href="Quiz.html" target="_blank"> Quiz</a>
+    </nav>
+
+    <section id="poll">
+        <h2>Fan Poll</h2>
+        <form>
+            <p>Who is your favorite FC Barcelona player?</p>
+            <input type="radio" name="player" value="messi"> Lionel Messi<br>
+            <input type="radio" name="player" value="xavi"> Xavi Hernández<br>
+            <input type="radio" name="player" value="iniesta"> Andrés Iniesta<br>
+            <button type="submit">Vote</button>
+        </form>
+    </section>
+
+    <section id="quiz">
+        <h2>FC Barcelona Quiz</h2>
+        <form>
+            <div class="quiz-question">
+                <p><strong>1. Who is FC Barcelona's all-time top scorer?</strong></p>
+                <input type="text" name="question1" placeholder="Your answer">
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>2. In what year was FC Barcelona founded?</strong></p>
+                <input type="text" name="question2" placeholder="Your answer">
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>3. How many UEFA Champions League titles has FC Barcelona won?</strong></p>
+                <select name="question3">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>4. What is the name of FC Barcelona's stadium?</strong></p>
+                <input type="text" name="question4" placeholder="Your answer">
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>5. Who was FC Barcelona's manager during the 2008-2009 treble-winning season?</strong></p>
+                <input type="text" name="question5" placeholder="Your answer">
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>6. What are FC Barcelona's team colors?</strong></p>
+                <select name="question6">
+                    <option value="blue_and_red">Blue and Red</option>
+                    <option value="blue_and_white">Blue and White</option>
+                    <option value="red_and_white">Red and White</option>
+                    <option value="yellow_and_red">Yellow and Red</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+
+    <section id="registration">
+        <h2>Register to FC Barcelona Fan Page</h2>
+        <form id="fanForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <span class="error-message" id="nameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <span class="error-message" id="phoneError"></span></br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error-message" id="passwordError"></span></br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <script src="validation.js"></script>
+
+    <section id="feedback-form">
+        <h2>We Value Your Feedback</h2>
+        <form action="https://example.com/submit-feedback" method="POST">
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Write your feedback here..."></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script src="quiz.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>History - FC Barcelona Fan Page</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+
+</head>
+<body onload = "swapImage()">
+    <script>
+
+        var i = 0;
+        var pics = new Array();
+
+        pics[0] = "history.jpg";
+        pics[1] = "history1.jpg";
+        pics[2] = "history2.jpg";
+        pics[3] = "history3.jpg";
+        pics[4] = "history4.jpg";
+
+
+
+        function swapImage() {
+            slide.src = pics[i];
+            if (i < pics.length - 1)
+                i++;
+            else i = 0;
+            setTimeout("swapImage()", 1800);
+        }
+
+
+    </script>
+    <header>
+        <h1> FC Barcelona - The Official Fan Page</h1>
+        <marquee behavior="scroll" direction="left" style="color: yellow; background-color: #00264d; padding: 10px; font-size: 1.2em;">
+            Welcome to the FC Barcelona Fan Page! Stay tuned for the latest updates and events!
+        </marquee>
+
+    </header>
+
+    <nav>
+        <a href="introduction.html" target="_blank"> Introduction</a>
+        <a href="history.html" target="_blank"> History</a>
+        <a href="players.html" target="_blank"> Players</a>
+        <a href="Career.html" target="_blank"> Career Titles</a>
+        <a href="Legends.html" target="_blank"> Legends</a>
+        <a href="campnou.html" target="_blank"> Camp Nou</a>
+        <a href="standings.html" target="_blank"> Standings</a>
+        <a href="Shop.html" target="_blank"> Shop</a>
+        <a href="Gallery.html" target="_blank"> Gallery</a>
+        <a href="Quiz.html" target="_blank"> Quiz</a>
+    </nav>
+    <section id="history">
+        <h2>The History of FC Barcelona</h2>
+        <p>Founded in 1899, FC Barcelona is not just a football club but a cultural and social phenomenon. Explore the journey that made them a global icon.</p>
+        <img name="slide" width="350"  height="350" alt="FC Barcelona history">
+    </section>
+    <section id="timeline">
+        <h2>Historical Timeline</h2>
+        <div class="timeline">
+            <div class="event">
+                <h3>1899</h3>
+                <p>FC Barcelona was founded by Joan Gamper.</p>
+            </div>
+            <div class="event">
+                <h3>1957</h3>
+                <p>Camp Nou officially opened.</p>
+            </div>
+            <div class="event">
+                <h3>2009</h3>
+                <p>The club won its first treble under Pep Guardiola.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

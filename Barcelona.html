@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FC Barcelona - Fan Page</title>
+
+    <style>
+        @media (max-width:540px) {
+            .container .content-body {
+                flex-direction: column;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0A122A;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 150vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 120vh;
+        }
+
+
+        .header {
+            grid-area: header;
+            background-color: #0057e7;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #00264d;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .content-body {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+            .content-body .content {
+                flex: 3 3;
+                overflow: auto;
+                background-color: rgba(255, 255, 255, 0.95);
+                color: black;
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            .content-body .sidenav {
+                flex: 1 1 5px;
+                overflow: auto;
+                background-color: #E32636;
+                padding: 5px;
+            }
+
+            .content-body .ads {
+                flex: 1 1 5px;
+                overflow: auto;
+                background-color: #ffcc00;
+                padding: 5px;
+            }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FC Barcelona Fan Page</h1>
+        </header>
+        <div class="content-body">
+            <nav class="sidenav">
+                <h2>Menu</h2>
+                <a href="introduction.html" target='here'>Introduction</a><br /><br />
+                <a href="history.html" target='here'>History</a><br /><br />
+                <a href="players.html" target='here'>Players</a><br /><br />
+                <a href="career.html" target='here'>Career Titles</a><br /><br />
+                <a href="legends.html" target='here'>Legend Players</a><br /><br />
+                <a href="campnou.html" target='here'>Camp Nou</a><br /><br />
+                <a href="gallery.html" target='here'>Gallery</a><br /><br />
+                <a href="standings.html" target='here'>Standings</a><br /><br />
+                <a href="shop.html" target='here'>Shop</a><br /><br />
+                <a href="quiz.html" target='here'>Quiz</a><br /><br />
+            </nav>
+            <iframe src="introduction.html" class="content" name='here'>Content</iframe>
+            <aside class="ads">
+                <marquee height="100%" direction="down">
+                    <h2>Força Barça!</h2>
+                </marquee>
+            </aside>
+        </div>
+        <footer class="footer">
+            <marquee> <h2>&copy; 2025 FC Barcelona Fan Page</h2> </marquee>
+        </footer>
+    </div>
+</body>
+</html>
